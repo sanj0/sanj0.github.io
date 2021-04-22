@@ -26,3 +26,6 @@ OptimisMuss 2020 is a german review of the year 2020 where only positive events 
 - [edgy script programming language](https://github.com/sanj0/edgy-script) - a turing-complete, slow language full of bugs
 - [Mr.ArtInvestor](https://github.com/sanj0/Mr.ArtInvestor) - a never completed game about investing in art by analysing what's trendy
 - [Salty Cards playing card library](https://github.com/sanj0/salty-cards) - a playing cards library for java that was never tested in real use
+
+## Papers
+- [The average german word](https://github.com/sanj0/sanj0.github.io/raw/main/papers/Paper_Average_German_Word.pdf) - a paper about the finding of the average german word
