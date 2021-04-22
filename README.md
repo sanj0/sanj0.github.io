@@ -28,4 +28,4 @@ OptimisMuss 2020 is a german review of the year 2020 where only positive events 
 - [Salty Cards playing card library](https://github.com/sanj0/salty-cards) - a playing cards library for java that was never tested in real use
 
 ## Papers
-- [The average german word](https://github.com/sanj0/sanj0.github.io/raw/main/papers/Paper_Average_German_Word.pdf) - a paper about the finding of the average german word
+- [The average german word](https://github.com/sanj0/sanj0.github.io/blob/main/papers/Paper_Average_German_Word.pdf) - a paper about the finding of the average german word
