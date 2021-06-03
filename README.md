@@ -2,6 +2,11 @@
 Malte "sanj0" Dostal is a hobby coder from germany whose best work is a 2D java game library no one uses and a mediocre chess AI that loses dead-winning endgames.
 The absolute majority of my software is build using Java (am a 1trick pony, I know) and should thus be completely cross platform compatible.
 
+## Latest publications
+(German) "Nur eine Ausrede", eine amateur-theologische Anhandlung, die in 25 Seiten mit historisch-kritisch gegen homophob-konservativ argumentiert.
+- Direkter Download (pdf): https://github.com/sanj0/sanj0.github.io/raw/main/papers/Nur%20eine%20Ausrede.pdf
+- GitHub file viewer file: https://github.com/sanj0/sanj0.github.io/blob/main/papers/Nur%20eine%20Ausrede.pdf
+
 ## Highlights
 
 ### [Salty Engine](https://github.com/sanj0/salty-engine)
