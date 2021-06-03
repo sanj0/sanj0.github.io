@@ -4,8 +4,8 @@ The absolute majority of my software is build using Java (am a 1trick pony, I kn
 
 ## Latest publications
 (German) "Nur eine Ausrede", eine amateur-theologische Anhandlung, die in 25 Seiten mit historisch-kritisch gegen homophob-konservativ argumentiert.
-- Direkter Download (pdf): https://github.com/sanj0/sanj0.github.io/raw/main/papers/Nur%20eine%20Ausrede.pdf
-- GitHub file viewer file: https://github.com/sanj0/sanj0.github.io/blob/main/papers/Nur%20eine%20Ausrede.pdf
+- Direkter Download (pdf): [https://github.com/sanj0/sanj0.github.io/raw/main/papers/Nur%20eine%20Ausrede.pdf](https://github.com/sanj0/sanj0.github.io/raw/main/papers/Nur%20eine%20Ausrede.pdf)
+- GitHub file viewer file: [https://github.com/sanj0/sanj0.github.io/blob/main/papers/Nur%20eine%20Ausrede.pdf](https://github.com/sanj0/sanj0.github.io/blob/main/papers/Nur%20eine%20Ausrede.pdf)
 
 ## Highlights
 
