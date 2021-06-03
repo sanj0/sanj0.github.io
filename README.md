@@ -4,7 +4,7 @@ Malte "sanj0" Dostal is a hobby coder from germany whose best work is a 2D java 
 ## Latest publications
 (German) "Nur eine Ausrede", eine amateur-theologische Anhandlung, die in 25 Seiten mit historisch-kritisch gegen homophob-konservativ argumentiert.
 - Direkter Download (pdf): [https://github.com/sanj0/sanj0.github.io/raw/main/papers/Nur%20eine%20Ausrede.pdf](https://github.com/sanj0/sanj0.github.io/raw/main/papers/Nur%20eine%20Ausrede.pdf)
-- GitHub file viewer file: [https://github.com/sanj0/sanj0.github.io/blob/main/papers/Nur%20eine%20Ausrede.pdf](https://github.com/sanj0/sanj0.github.io/blob/main/papers/Nur%20eine%20Ausrede.pdf)
+- GitHub file viewer (online-Version): [https://github.com/sanj0/sanj0.github.io/blob/main/papers/Nur%20eine%20Ausrede.pdf](https://github.com/sanj0/sanj0.github.io/blob/main/papers/Nur%20eine%20Ausrede.pdf)
 
 ## Highlights
 
