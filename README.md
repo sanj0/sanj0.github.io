@@ -1,6 +1,5 @@
 # sanj0 (Malte Dostal)
-Malte "sanj0" Dostal is a hobby coder from germany whose best work is a 2D java game library no one uses and a mediocre chess AI that loses dead-winning endgames.
-The absolute majority of my software is build using Java (am a 1trick pony, I know) and should thus be completely cross platform compatible.
+Malte "sanj0" Dostal is a hobby coder from germany whose best work is a 2D java game library no one uses and a mediocre chess AI that draws dead-winning endgames.
 
 ## Latest publications
 (German) "Nur eine Ausrede", eine amateur-theologische Anhandlung, die in 25 Seiten mit historisch-kritisch gegen homophob-konservativ argumentiert.
