@@ -18,7 +18,7 @@ html {
 
 .main-div {
     position: absolute;
-    overflow: auto;
+    overflow: visible;
     text-align: center;
     width: 50%;
     margin: auto;
@@ -30,13 +30,6 @@ html {
     background-color: rgb(41, 43, 48);
     border-radius: 1.5em;
     box-shadow: 15px 10px rgba(41, 43, 48, .5);
-}
-
-@media only screen and (max-width: 768px) {
-    .main-div {
-        margin-top: 5em;
-        width: 90%;
-    }
 }
 
 #title {
@@ -94,6 +87,7 @@ html {
     position: absolute;
     margin-top: 2.5em;
     margin-left: .5em;
+    white-space: nowrap;
 }
 
 .bodydiv {
@@ -121,4 +115,37 @@ html {
     color: white;
     display: inline-block;
     margin-top: 3em;
+}
+
+@media only screen 
+and (max-width : 1100px) {
+    .portrait {
+        width: 3em;
+        top: 0;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    .main-div {
+        margin-top: 3em;
+        width: 75%;
+    }
+    .context {
+        margin-top: 4em;
+        left: 0;
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+}
+
+@media only screen 
+and (min-width : 700px) {
+    .portrait {
+        width: 5em;
+        top: 2em;
+        right: 2em;
+        left: unset;
+    }
 }
