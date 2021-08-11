@@ -1,450 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Malte "sanj0" Dostal</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" />
-  <!-- https://fonts.google.com/specimen/Open+Sans -->
-  <link rel="stylesheet" href="css/all.min.css" />
-  <!-- https://fontawesome.com/ -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <!-- https://getbootstrap.com/ -->
-  <link rel="stylesheet" href="css/tooplate-style.css" />
-  <!--
-Tooplate 2111 Pro Line
-http://www.tooplate.com/view/2111-pro-line
--->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sanj0.css">
+    <script type="text/javascript" src="js/nav_script.js"></script>
+    <title>sanj0</title>
 </head>
-
 <body>
-  <!-- navbar -->
-  <div class="tm-nav-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="navbar navbar-expand-md navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tmMainNav"
-              aria-controls="tmMainNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+    <main>
+        <div id="divstart" class="main-div">
+            <h1 id="title">sanj0</h1>
+            <img class="portrait" src="img/sanj0.jpeg" alt="saj0">
+            <button onclick="on_nav_btn_click(this);" id="btnwho" class="button stdtext">Who?</button><span class="stdtext body context"> ... is sanj0?</span><br>
+            <button onclick="on_nav_btn_click(this);" id="btnwhat" class="button stdtext">What?</button><span class="stdtext body context"> ... does he do?</span><br>
+            <button onclick="on_nav_btn_click(this);" id="btnwhere" class="button stdtext">Where?</button><span class="stdtext body context">... can you find him?</span><br>
+            <button onclick="on_nav_btn_click(this);" id="btnwhy" class="button stdtext">Why?</button><span class="stdtext body context"> ... does he ...?</span><br>
+            <span id="footer" class="stdtext">&copy; 2021 Malte Dostal. All rights reserved.</span>
+        </div>
 
-            <div class="collapse navbar-collapse" id="tmMainNav">
-              <ul class="navbar-nav mx-auto tm-navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">home.<span class="sr-only"></span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about-me">about me.</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects">projects.</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#company">links.</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">contact.</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link external" href="https://www.github.com/sanj0" target="_blank">github...</a>
-                </li>
-              </ul>
+        <div id="divwho" class="main-div" style="display:none">
+            <h1 id="title">sanj0</h1>
+            <img class="portrait" src="img/sanj0.jpeg" alt="saj0">
+            <button onclick="on_nav_btn_click(this);" id="btnstart" class="button stdtext">&lt; back</button><br>
+            <div class="bodydiv">
+                <p class="stdtext body">sanj0 the internet pseudonym of <b>Malte D.</b>, a student from germany.
+                <br> He is currently <span id="age">ERROR</span> years old.</p>
+                <p class="stdtext body">He &#10084;&#65039; coding and other digital technologies, listening to music, reading books and working out.</p>
             </div>
-          </nav>
+            <span id="footer" class="stdtext">&copy; 2021 Malte Dostal. All rights reserved.</span>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Video Banner -->
-  <section class="tm-banner-section" id="tmVideoSection">
-    <div class="container tm-banner-text-container" id="top">
-      <div class="row">
-        <div class="col-12">
-          <header>
-            <h2 class="tm-banner-title">Malte "sanj0" Dostal</h2>
-            <p class="mx-auto tm-banner-subtitle">
-              student, problem solver, software developer
-            </p>
-          </header>
-        </div>
-      </div>
-    </div>
-
-    <!-- Video -->
-    <div id="hero-vid">
-    </div>
-  </section>
-  <!-- about-me -->
-  <div class="container tm-about-me-section" id="about-me">
-    <div class="row tm-about-me-row">
-      <section class="col-md-6 col-sm-12 tm-feature-block">
-        <header class="tm-feature-header">
-          <h3 class="tm-feature-h">I am Malte Dostal</h3>
-        </header>
-        <p>I was born an raised in Bavaria, Germany.</p>
-        <p>I love listening to music, reading books and working out.</p>
-        <p>As of July 2021, I am still in school, well on my way to get my Abitur.
-          <br>After that, I plan on taking a break form education, to get some time off and work. After that, I'm most likely going to university to study "Lehramt" and eventually become a teacher.
-          (If I'm not founding a company to make millions ;))
-        </p>
-      </section>
-      <section class="col-md-6 col-sm-12 tm-feature-block">
-        <header class="tm-feature-header">
-          <h3 class="tm-feature-h">... alias sanj0</h3>
-        </header>
-        <p>
-          I started programming at the age of 11, with a book about C# from my school's library.
-          <br>Ever since, I've been obsessed with digital technologies. Not only did I vastly increase my programming skills, I also dove into multiple other digital territories:
-          <ul>
-            <li>game development (java2d, unity)</li>
-            <li>image manipulation (gimp)</li>
-            <li>audio and music creation / editing (audacity, lmms, garageBand)</li>
-            <li>video editing (iMovie, shotcut)</li>
-          </ul>
-        </p>
-      </section>
-    </div>
-  </div>
-
-  <!-- projects -->
-  <div class="container" id="projects">
-    <div class="row">
-      <div class="col-12">
-        <div class="tm-parallax">
-          <header class="tm-parallax-header">
-            <h2 class="">projects. <br>some of them</h2>
-          </header>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="tm-activity-block">
-          <div class="tm-activity-img-container">
-            <!--<img src="img/img-01.jpg" alt="Image" class="tm-activity-img" />-->
-          </div>
-          <div class="tm-activity-block-text">
-            <h3 class="tm-text-blue"><a href="https://www.github.com/sanj0/salty-engine" target="_blank">Salty Engine</a></h3>
-            <p>
-              Being my longest running project, Salty Engine is a completely usable 2D java game library.
-              I myself and in cooperation with other programmers developed multiple games with it, some
-              of which are published.
-              The downside of the project's age is that older code is from times where I was practically a beginner.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="tm-activity-block mr-lg-0 ml-lg-auto">
-          <div class="tm-activity-img-container">
-            <!--<img src="img/img-01.jpg" alt="Image" class="tm-activity-img" />-->
-          </div>
-          <div class="tm-activity-block-text">
-            <h3 class="tm-text-blue"><a href="https://github.com/sanj0/lt3" target="_blank">LT3</a></h3>
-            <p>
-              LT3 is a simplistic, yet fully functional chess UI + a very mediocre AI.
-              According to profound testing against myself and friends, I would estimate it to have a strength that would place it at around 1350 Elo on chess.com.
-              <br>Vast optimization is still to be done; no form of mini-max is implemented, look up tables are limited.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="tm-activity-block">
-          <div class="tm-activity-img-container">
-            <!--<img src="img/img-01.jpg" alt="Image" class="tm-activity-img" />-->
-          </div>
-          <div class="tm-activity-block-text">
-            <h3 class="tm-text-blue"><a href="https://sanj0.itch.io/escape-the-junk" target="_blank">Escape The Junk</a></h3>
-            <p>
-              Escape the Junk was developed by myself and a friend of mine for the Ludum Dare jam 42.
-              <br>The game was made using Salty Engine and is about a robot trying to escape a junk press.
-              A prequel is currently in the making and will explain how the poor robot ended up in that miserable situation.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="tm-activity-block mr-lg-0 ml-lg-auto">
-          <div class="tm-activity-img-container">
-            <!--<img src="img/img-01.jpg" alt="Image" class="tm-activity-img" />-->
-          </div>
-          <div class="tm-activity-block-text">
-            <h3 class="tm-text-blue"><a href="https://github.com/sanj0/sanj0.github.io/blob/main/papers/Nur%20eine%20Ausrede.pdf" target="_blank">(German) Nur Eine Ausrede</a></h3>
-            <p>
-              A dissertation about how the bible is being exploited against homosexual people.
-              <br>Eine amateur-theologische Abhandlung darüber, wie die Bibel systematisch antihomosexuell instrumentalisiert wird.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Company --->
-  <!---
-  <section class="container tm-company-section" id="company">
-    <div class="row">
-      <div class="col-xl-9 col-lg-8 col-md-12 tm-company-left">
-        <div class="tm-company-about">
-          <div class="tm-company-img-container">
-            <img src="img/img-05.jpg" alt="Image" />
-          </div>
-          <div class="tm-company-about-text">
-            <header>
-              <h2 class="tm-company-about-header">Our Company</h2>
-            </header>
-            <p>
-              Phasellus fringilla convallis libero non aliquam. Morbi justo
-              lorem, varius ultricies pulvinar ac, aliquet quis ipsum.
-            </p>
-            <p class="mb-4">
-              Suspendisse aliquam pulvinar odio sed rhoncus. Cras pretium diam
-              ut metus tristique, a ultricies sapien euismod. Duis dui diam,
-              maximus ac ligula a, accumsan cursus ante.
-            </p>
-            <a href="#" class="btn tm-btn tm-float-right">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-9 col-lg-4 col-md-12 tm-company-right  ml-lg-auto mr-lg-0">
-        <div class="tm-company-right-inner">
-          <ul class="nav nav-tabs" id="tmCompanyTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link tm-nav-link-border-right active" id="vision-tab" data-toggle="tab" href="#vision"
-                role="tab" aria-controls="vision" aria-selected="true">Vision</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link tm-no-border-right" id="mission-tab" data-toggle="tab" href="#mission" role="tab"
-                aria-controls="mission" aria-selected="false">Mission</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="tmTabContent">
-            <div class="tab-pane fade show active" id="vision" role="tabpanel" aria-labelledby="vision-tab">
-              <p>
-                Phasellus suscipit sapien magna, vel dictum lorem fringilla.
-              </p>
-              <p>
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra.
-              </p>
-              <p>
-                Nulla ornare ligula nibh, sit amet tristique magna efficitur
-                eu.
-              </p>
+        
+        <div id="divwhat" class="main-div" style="display:none">
+            <h1 id="title">sanj0</h1>
+            <img class="portrait" src="img/sanj0.jpeg" alt="saj0">
+            <button onclick="on_nav_btn_click(this);" id="btnstart" class="button stdtext">&lt; back</button><br>
+            <div class="bodydiv">
+                <p class="stdtext body">sanj0 the internet pseudonym of <b>Malte D.</b>, a student from germany.
+                <br> He is currently <span id="age">ERROR</span> years old.</p>
+                <p class="stdtext body">He &#10084;&#65039; coding and other digital technologies, listening to music, reading books and working out.</p>
             </div>
-            <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
-              <p>
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra.
-              </p>
-              <p>
-                Nulla ornare ligula nibh, sit amet tristique magna efficitur
-                eu.
-              </p>
-              <p>
-                Phasellus suscipit sapien magna, vel dictum lorem fringilla.
-              </p>
-            </div>
-          </div>
+            <span id="footer" class="stdtext">&copy; 2021 Malte Dostal. All rights reserved.</span>
         </div>
-      </div>
-    </div>
-  </section>
-  
-  <section class="container tm-contact-section" id="contact">
-    <div class="row">
-      <div class="col-xl-5 col-lg-6 col-md-12 tm-contact-left">
-        <div class="tm-contact-form-container ml-auto mr-0">
-          <header>
-            <h2 class="tm-contact-header">Contact Us</h2>
-          </header>
-          <form action="index.html" class="tm-contact-form" method="POST">
-            <div class="form-group">
-              <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"
-                required />
+
+        <div id="divwhere" class="main-div" style="display:none">
+            <h1 id="title">sanj0</h1>
+            <img class="portrait" src="img/sanj0.jpeg" alt="saj0">
+            <button onclick="on_nav_btn_click(this);" id="btnstart" class="button stdtext">&lt; back</button><br>
+            <div class="bodydiv">
+                <ul class="ulplatforms">
+                    <li class="stdtext body">on <a class="stdtext body link" href="https://www.github.com/sanj0" target="_blank">GitHub</a></li>
+                    <li class="stdtext body">on Discord: sanj0#8944</li>
+                </ul>
             </div>
-            <div class="form-group">
-              <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"
-                required />
-            </div>
-            <div class="form-group">
-              <textarea rows="5" id="contact_message" name="contact_message" class="form-control" placeholder="Message"
-                required></textarea>
-            </div>
-            <div class="tm-text-right">
-              <button type="submit" class="btn tm-btn tm-btn-big">
-                Send It
-              </button>
-            </div>
-          </form>
+            <span id="footer" class="stdtext">&copy; 2021 Malte Dostal. All rights reserved.</span>
         </div>
-      </div>
-      <div class="col-xl-7 col-lg-6 col-md-12 tm-contact-right">
-        <div class="tm-contact-figure-block">
-          <figure class="d-inline-block">
-            <img src="img/img-06.jpg" alt="Image" class="img-fluid" />
-            <figcaption class="tm-contact-figcaption">
-              Nulla arcu tortor, mattis in diam eget, hendrerit vulputate
-              ligula. Nam non purus consequat, dictum lectus lobortis, laoreet
-              nibh. Cras vitae facilisis felis. Phasellus tristique.
-            </figcaption>
-          </figure>
+
+        <div id="divwhy" class="main-div" style="display:none">
+            <h1 id="title">sanj0</h1>
+            <img class="portrait" src="img/sanj0.jpeg" alt="saj0">
+            <button onclick="on_nav_btn_click(this);" id="btnstart" class="button stdtext">&lt; back</button><br>
+            <span id="footer" class="stdtext">&copy; 2021 Malte Dostal. All rights reserved.</span>
         </div>
-      </div>
-    </div>
-  </section>-->
-  <footer class="container tm-footer">
-    <div class="row tm-footer-row">
-      <p class="col-md-10 col-sm-12 mb-0">
-        Copyright &copy; 2021 Malte Dostal - Design:
-        <a rel="nofollow" href="https://www.facebook.com/tooplate" class="tm-footer-link">Tooplate</a>
-      </p>
-      <div class="col-md-2 col-sm-12 scrolltop">
-        <div class="scroll icon"><i class="fa fa-4x fa-angle-up"></i></div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/jquery-1.9.1.min.js"></script>
-  <!-- Single Page Nav plugin works with this version of jQuery -->
-  <script src="js/jquery.singlePageNav.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script>
-    /**
-     * detect IE
-     * returns version of IE or false, if browser is not Internet Explorer
-     */
-    function detectIE() {
-      var ua = window.navigator.userAgent;
-
-      var msie = ua.indexOf("MSIE ");
-      if (msie > 0) {
-        // IE 10 or older => return version number
-        return parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)), 10);
-      }
-
-      var trident = ua.indexOf("Trident/");
-      if (trident > 0) {
-        // IE 11 => return version number
-        var rv = ua.indexOf("rv:");
-        return parseInt(ua.substring(rv + 3, ua.indexOf(".", rv)), 10);
-      }
-
-      // var edge = ua.indexOf('Edge/');
-      // if (edge > 0) {
-      //     // Edge (IE 12+) => return version number
-      //     return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
-      // }
-
-      // other browser
-      return false;
-    }
-
-    function setVideoHeight() {
-      const videoRatio = 1920 / 1080;
-      const minVideoWidth = 400 * videoRatio;
-      let secWidth = 0,
-        secHeight = 0;
-
-      secWidth = videoSec.width();
-      secHeight = videoSec.height();
-
-      secHeight = secWidth / 2.13;
-
-      if (secHeight > 600) {
-        secHeight = 600;
-      } else if (secHeight < 400) {
-        secHeight = 400;
-      }
-
-      if (secWidth > minVideoWidth) {
-        $("video").width(secWidth);
-      } else {
-        $("video").width(minVideoWidth);
-      }
-
-      videoSec.height(secHeight);
-    }
-
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 50) {
-        $(".scrolltop:hidden")
-          .stop(true, true)
-          .fadeIn();
-      } else {
-        $(".scrolltop")
-          .stop(true, true)
-          .fadeOut();
-      }
-
-      // Make sticky header
-      if ($(this).scrollTop() > 158) {
-        $(".tm-nav-section").addClass("sticky");
-      } else {
-        $(".tm-nav-section").removeClass("sticky");
-      }
-    });
-
-    let videoSec;
-
-    $(function () {
-      if (detectIE()) {
-        alert(
-          "Please use the latest version of Edge, Chrome, or Firefox for best browsing experience."
-        );
-      }
-
-      const mainNav = $("#tmMainNav");
-      mainNav.singlePageNav({
-        filter: ":not(.external)",
-        offset: $(".tm-nav-section").outerHeight(),
-        updateHash: true,
-        beforeStart: function () {
-          mainNav.removeClass("show");
-        }
-      });
-
-      videoSec = $("#tmVideoSection");
-
-      // Adjust height of video when window is resized
-      $(window).resize(function () {
-        setVideoHeight();
-      });
-
-      setVideoHeight();
-
-      $(window).on("load scroll resize", function () {
-        var scrolled = $(this).scrollTop();
-        var vidHeight = $("#hero-vid").height();
-        var offset = vidHeight * 0.6;
-        var scrollSpeed = 0.25;
-        var windowWidth = window.innerWidth;
-
-        if (windowWidth < 768) {
-          scrollSpeed = 0.1;
-          offset = vidHeight * 0.5;
-        }
-
-        $("#hero-vid").css(
-          "transform",
-          "translate3d(-50%, " + -(offset + scrolled * scrollSpeed) + "px, 0)"
-        ); // parallax (25% scroll rate)
-      });
-
-      // Back to top
-      $(".scroll").click(function () {
-        $("html,body").animate(
-          { scrollTop: $("#home").offset().top },
-          "1000"
-        );
-        return false;
-      });
-    });
-  </script>
+    </main>
+    <script type="text/javascript" src="js/sanj0.js"></script>
 </body>
-
 </html>
