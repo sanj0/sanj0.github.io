@@ -10,6 +10,9 @@ const BTN_WHAT = "btnwhat";
 const BTN_WHERE = "btnwhere";
 const BTN_WHY = "btnwhy";
 
+const BTN_PREFIX = "btn";
+const DIV_PREFIX = "div";
+
 const TRANSFORM_TRANSITION_SPEED = 150;
 
 let current_div = DIV_START;
@@ -41,9 +44,9 @@ function next_skew() {
 }
 
 function btn_to_div(btn) {
-    return btn.replace("btn", "div");
+    return DIV_PREFIX + btn.substring(BTN_PREFIX.length);
 }
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
-  }
+}
