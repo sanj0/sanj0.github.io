@@ -21,27 +21,26 @@ let current_div = DIV_START;
 let next_skew_negative = false;
 
 async function on_nav_btn_click(item) {
-    
     let current = document.getElementById(current_div);
     let next = document.getElementById(btn_to_div(item.id));
 
-    current.style.transform = next_skew();
+    current.style.transform = next_rotation();
+    next.style.transform = next_rotation();
     next.style.display = "block";
-    next.style.transform = current.style.transform;
     await sleep(TRANSFORM_TRANSITION_SPEED);
     current.style.display = "none";
-    next.style.transform = "skew(0deg, 0deg)";
+    next.style.transform = "rotateY(0)";
     await sleep(TRANSFORM_TRANSITION_SPEED);
     current_div = next.id;
     return false;
 }
 
-function next_skew() {
+function next_rotation() {
     next_skew_negative = !next_skew_negative;
     if (next_skew_negative) {
-        return "skew(45deg, 45deg)";
+        return "rotateY(90deg)";
     } else {
-        return "skew(-45deg, -45deg)"; 
+        return "rotateY(-90deg)"; 
     }
 }
 
