@@ -13,7 +13,7 @@
 html {
     background: rgb(237,129,158);
     background: linear-gradient(135deg, rgba(237,129,158,1) 0%, rgba(248,223,166,1) 100%);
-    height: 100vh;
+    height: 200vh;
 }
 
 .main-div {
@@ -78,7 +78,7 @@ html {
     color: white;
     background: #f25065;
 }
-‚
+
 #btnstart {
     margin-top: .5em;
     margin-bottom: 2em;
@@ -102,6 +102,48 @@ html {
     line-height: 2em;
 }
 
+#btnprojects {
+    background: rgba(248,223,166,1);
+}
+
+.projects-column {
+    float: left;
+    width: 50%;
+}
+
+.projects-column:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#left-projects-column:after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 3px;
+    height: 75em;
+    top: 20em;
+    left: 50%;
+    border-radius: 2px;
+    display: block;
+}
+
+.projects-headline {
+    font-family: "Righteous", cursive;
+    color: white;
+    margin-bottom: 2em;
+}
+
+.project-list {
+    max-width: 80%;
+    text-align: left;
+}
+
+.liproject {
+    padding-bottom: 1.25em;
+}
+
 .ulplatforms {
     text-align: center;
     list-style-position: inside;
@@ -110,6 +152,7 @@ html {
 
 .link {
     text-decoration: underline;
+    color: white;
 }
 
 .footer {

@@ -1,12 +1,14 @@
 const DIV_START = "divstart";
 const DIV_WHO = "divwho";
 const DIV_WHAT = "divwhat";
+const DIV_PROJECTS = "divprojects";
 const DIV_WHERE = "divwhere";
 const DIV_WHY = "divwhy";
 
 const BTN_START = "btnstart";
 const BTN_WHO = "btnwho";
 const BTN_WHAT = "btnwhat";
+const BTN_PROJECTS = "btnprojects";
 const BTN_WHERE = "btnwhere";
 const BTN_WHY = "btnwhy";
 
