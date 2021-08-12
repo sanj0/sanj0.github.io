@@ -40,7 +40,7 @@ function next_rotation() {
     if (next_skew_negative) {
         return "rotateY(90deg)";
     } else {
-        return "rotateY(-90deg)"; 
+        return "rotateY(-90deg)";
     }
 }
 
