@@ -11,6 +11,17 @@ document.getElementById("age").innerHTML = Math.floor((Date.now() - birthday) / 
 const divstart = document.getElementById("divstart");
 divstart.onmouseover = divstart.onmouseout = change_context_visibility;
 
+const urlParams = new URLSearchParams(window.location.search);
+
+if (urlParams.has("v")) {
+    let div = document.getElementById(urlParams.get("v"));
+    if (div != null) {
+        document.getElementById(DIV_START).style.display = "none";
+        div.style.display = "block";
+        current_div = div.id;
+    }
+}
+
 function change_context_visibility(event) {
     let hide = event.type == "mouseout";
     change_context_display_style(hide ? "none" : "inline-block");

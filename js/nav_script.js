@@ -32,6 +32,7 @@ async function on_nav_btn_click(item) {
     next.style.transform = "rotateY(0)";
     await sleep(TRANSFORM_TRANSITION_SPEED);
     current_div = next.id;
+    window.history.replaceState(null, null, "?v=" + current_div);
     return false;
 }
 
