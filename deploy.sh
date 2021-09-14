@@ -1,15 +1,15 @@
 # minifies all source into the github pages repo
 # and commits and pushed the changes using the last commit message from the source repo
 before=$PWD
-blogpost_root="../blog-posts.sources/"
+blogpost_root="../blog-posts.sources"
 posts_dir="${blogpost_root}/posts"
 blogbuilder="${blogpost_root}/blogbuilder.jar"
-posts_dst="posts/"
+posts_dst="posts"
 template="${blogpost_root}/template.html"
 # get last commit message
 echo "fetching last commit message.."
 commit_message=`git log -1 --pretty=%B`
-repo="../sanj0.github.io/"
+repo="../sanj0.github.io"
 echo "... done."
 
 echo "converting all posts from ${posts_dir} to ${posts_dst} using template: ${template}"
