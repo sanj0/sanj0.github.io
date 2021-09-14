@@ -13,7 +13,7 @@ repo="../sanj0.github.io"
 echo "... done."
 
 echo "converting all posts from ${posts_dir} to ${posts_dst} using template: ${template}"
-java -jar$blogbuilder $posts_dir $template $posts_dst
+java -jar $blogbuilder $posts_dir $template $posts_dst
 # minify all sources into gh pages repo
 echo "minifying all resources and copying them to ${repo}"
 minify -s --recursive -o $repo .
