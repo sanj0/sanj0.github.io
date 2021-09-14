@@ -1,7 +1,7 @@
 # minifies all source into the github pages repo
 # and commits and pushed the changes using the last commit message from the source repo
 before=$PWD
-blogpost_root="../blog-posts.sources"
+blogpost_root="../blog-posts.source"
 posts_dir="${blogpost_root}/posts"
 blogbuilder="${blogpost_root}/blogbuilder.jar"
 posts_dst="posts"
